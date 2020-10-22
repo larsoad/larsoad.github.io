@@ -8,7 +8,9 @@ $(function()
 	var form = $("#contact-form");
 	var button = $(".send-button");
 
-	form.submit(function()
+	var url = "https://adamdlarson-contact.azurewebsites.net/api/ContactTrigger?code=OaTKyHCwGsVC9UOGBTv9gX9Upr2O8dLEhFzAfYDH6HyED8yyUO27Wg==";
+
+	form.submit(function(event)
 	{
 		button
 			.html('<span class="spinner-border spinner-border-sm mr-2"></span>Sending...')
@@ -16,21 +18,30 @@ $(function()
 
 		var data =
 		{
-			name: name.val(),
-			email: email.val(),
-			message: message.val()
+			name: name.val() || "Unknown",
+			from: email.val(),
+			subject: "Contact request",
+			content: message.val()
 		};
 
-		console.log(data);
-
-		setTimeout(function()
+		var request = new XMLHttpRequest();
+		request.open("POST", url, true);
+		request.setRequestHeader("Content-Type", "application/json");
+		request.addEventListener("loadend", function()
 		{
-			button.html("Sent!");
-				
-			success.show();
-			//failure.show();
-		}, 1000);
+			if (request.status == 200)
+			{
+				button.html("Sent!");
+				success.show();
+			}
+			else
+			{
+				button.html(":(");
+				failure.show();
+			}
+		});
 
+		request.send(JSON.stringify(data));
 		event.preventDefault();
 	});
 });

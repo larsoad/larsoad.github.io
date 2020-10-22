@@ -37,6 +37,13 @@
 		</div>
 	</nav>
 	<div id="top" class="jumbotron header" style="background-image: url(img/background.jpg)">
+		<div class="text-white text-center animated fadeIn py-5 px-4">
+			<div class="py-5">
+				<img class="rounded-circle fluid avatar" src="img/me.jpg"/>
+				<h2 class="card-title h2 my-2">Adam Larson</h2>
+				<span class="my-4 pb-2 px-md-5 mx-md-5">Software Engineer</span>
+			</div>
+		</div>
 	</div>
 	<div id="about" class="section">
 		<div class="container p-4">
@@ -46,12 +53,34 @@
 				</div>
 			</div>
 			<div class="row p-2">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti explicabo voluptatem quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti explicabo voluptatem quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti explicabo voluptatem quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti explicabo voluptatem quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti explicabo voluptatem quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti explicabo voluptatem quisquam nulla asperiores aspernatur aperiam voluptate et consectetur minima delectus, fugiat eum soluta blanditiis adipisci, velit dolore magnam.</p>
+				<div class="col">
+					<p>
+						I was first introduced to programming in a high school computer animation class. The class involved using Flash to create animations, but I stumbled upon ActionScript
+						and quickly became fascinated. I have always loved puzzles and problem solving and programming is rife with both, along with an endless amount of learning and discovery.
+					</p>
+					<p>
+						I earned a computer science degree at Seattle Pacific University then worked at GarageGames first as a tools development intern and ultimately advancing to a programming lead.
+						Since leaving GarageGames I have been self-employed, working primarily with Keuilian, inc as a full stack developer, and releasing a few games as a co-founder of PiRhoSoft.
+					</p>
+				</div>
+				<div class="col">
+					<p>
+						Through my professional work and hobbyist projects I have been exposed to a wide variety of tools, languages, frameworks, etc. but I most enjoy and have the most experience
+						with C++ and C#. I love tackling challenging problems that require creative solutions as well as creating tools and libraries that simplify challenging tasks.
+					</p>
+					<p>
+						Outside of work I enjoy playing and following sports, traveling, video games, reading, and pretty much anything where I can learn or experience something new.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="art-of-war-player" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+					<iframe id="taow-player" class="embed-responsive-item" src="https://www.youtube.com/embed/4xOs599U6OQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -63,6 +92,11 @@
 				</div>
 			</div>
 			<div class="row p-2">
+				<div class="col carousel-arrow">
+					<a class="carousel-control-prev" href="#projects-carousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					</a>
+				</div>
 				<div class="col">
 					<div id="projects-carousel" class="carousel slide" data-interval="false">
 						<div class="carousel-inner" role="listbox">
@@ -70,8 +104,50 @@
 								<div class="col-md-12">
 									<div class="card mx-2 my-2 project-card">
 										<div class="card-body">
-											<h4 class="card-title">The Art of War</h4>
-											<p class="card-text">Here's some stuff about The Art of War.</p>
+											<h4 class="card-title text-center">The Art of War</h4>
+											<p class="text-center text-muted w-responsive mx-auto mb-4">A 2D online-multiplayer shooter <a href="https://www.microsoft.com/en-us/p/the-art-of-war-game/9pgj9477r23x" target="_blank">released</a> on Xbox and Windows built in C++</p>
+											<div class="row align-items-center">
+												<div class="col-lg-7">
+													<ul class="list-unstyled fa-ul mb-lg-0 mb-5">
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fab fa-superpowers fa-2x indigo-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Pargon</h5>
+																<p class="text-muted">Architected and contributed to building the underlying <a href="https://github.com/pirhosoft/Pargon" target="_blank">framework</a> with <a href="https://github.com/pirhosoft/PargonApplication" target="_blank">platform</a>, <a href="https://github.com/pirhosoft/PargonGraphics" target="_blank">graphics</a>, <a href="https://github.com/pirhosoft/PargonAudio" target="_blank">audio</a>, and <a href="https://github.com/pirhosoft/PargonInput" target="_blank">input</a> abstractions.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-network-wired fa-2x light-green-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Networking</h5>
+																<p class="text-muted">Designed a client/server network model on top of the <a href="https://github.com/networkprotocol/yojimbo" target="_blank">Yojimbo library</a>.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-brain fa-2x deep-purple-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">AI</h5>
+																<p class="text-muted">Co-developed a custom navigation graph generation algorithm for dynamic traversal of arbitrary platforms by ai controlled players with variable movement attributes.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fab fa-forumbee fa-2x red-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Buzzwords!</h5>
+																<p class="text-muted mb-0">Implemented swept collision, ik animations, data driven asset management, network interpolation and extrapolation, rigid body physics, 3d audio, and more!</p>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="col-lg-5">
+													<div class="view z-depth-1-half rounded">
+														<img class="rounded img-fluid" src="img/thumbnails/the-art-of-war.png">
+														<div class="mask flex-center">
+															<a id="taow-play" class="btn-primary btn-lg" data-toggle="modal" data-target="#art-of-war-player"><i class="text-white fas fa-play"></i></a>
+														</div>
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -80,8 +156,47 @@
 								<div class="col-md-12">
 									<div class="card mx-2 my-2 project-card">
 										<div class="card-body">
-											<h4 class="card-title">Unity Tool Suite</h4>
-											<p class="card-text">Here's some stuff about The Unity Tool Suite.</p>
+											<h4 class="card-title text-center">FitPro Connect</h4>
+											<p class="text-center text-muted w-responsive mx-auto mb-4">A collection of web applications for fitness professionals to manage and communicate with current and prospective clients (<a href="https://fitpronewsletter.com/" target="_blank">FitPro Newsletter</a>) (<a href="https://fitpromagazine.com/" target="_blank">FitPro Magazine</a>)</p>
+											<div class="row align-items-center">
+												<div class="col-lg-7">
+													<ul class="list-unstyled fa-ul mb-lg-0 mb-5">
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-server fa-2x indigo-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Backend Development</h5>
+																<p class="text-muted">Designed and implemented the backend using ASP.net, ASP.net Identity, and Entity Framework.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-desktop fa-2x light-green-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Frontend Development</h5>
+																<p class="text-muted">Built the frontend using AngularJS from a provided design and specification.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-link fa-2x deep-purple-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Integrations</h5>
+																<p class="text-muted">Built an autoposting system with Facebook and Twitter support, syncing with several other client management systems (MindBody, Zen Planner, Club Ready), automation with Zapier, and Facebook Lead Ad acquisition.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-tools fa-2x red-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Administration</h5>
+																<p class="text-muted">Web server (IIS hosted by Rackspace) and database (SQL Server) management with automatic error reporting and continuous integration (TeamCity).</p>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="col-lg-5">
+													<div class="view">
+														<img class="rounded img-fluid" src="img/screenshots/fitpro.png">
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -90,8 +205,40 @@
 								<div class="col-md-12">
 									<div class="card mx-2 my-2 project-card">
 										<div class="card-body">
-											<h4 class="card-title">FitPro</h4>
-											<p class="card-text">Here's some stuff about FitPro.</p>
+											<h4 class="card-title text-center">Unity Tool Suite</h4>
+											<p class="text-center text-muted w-responsive mx-auto mb-4">A collection of various developer tools for use with <a href="https://unity.com/" target="_blank">Unity</a></p>
+											<div class="row align-items-center">
+												<div class="col-lg-7">
+													<ul class="list-unstyled fa-ul mb-lg-0 mb-5">
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-code-branch fa-2x indigo-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Composition</h5>
+																<p class="text-muted">An <a href="https://github.com/larsolm/UnityComposition" target="_blank">open source</a> framework for creating asynchronous, node based, dynamic event system to drive cinema scenes and other gameplay sequences.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-tools fa-2x light-green-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Editor Utilities</h5>
+																<p class="text-muted">An <a href="https://github.com/pirhosoft/PiRhoUtilities" target="_blank">open source</a> set of utilities and ui widgets that simplifies creation of custom editors and drawers.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-terminal fa-2x deep-purple-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Runtime Utilities</h5>
+																<p class="text-muted">A generalization of the composition framework split into projects for <a href="https://github.com/pirhosoft/PiRhoVariables" target="_blank">runtime variables</a>, <a href="https://github.com/pirhosoft/PiRhoExpressions" target="_blank">dynamic expressions</a>, and <a href="https://github.com/pirhosoft/PiRhoBindings" target="_blank">data binding</a>.</p>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="col-lg-5">
+													<div class="view z-depth-1-half rounded">
+														<img class="rounded img-fluid" src="img/screenshots/composition.png">
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -100,8 +247,40 @@
 								<div class="col-md-12">
 									<div class="card mx-2 my-2 project-card">
 										<div class="card-body">
-											<h4 class="card-title">Torque</h4>
-											<p class="card-text">Here's some stuff about Torque.</p>
+											<h4 class="card-title text-center">Torque Game Engine</h4>
+											<p class="text-center text-muted w-responsive mx-auto mb-4">The original <a href="https://en.wikipedia.org/wiki/Torque_(game_engine)" target="_blank">game engine</a> for indie developers created by <a href="http://garagegames.com/" target="_blank">GarageGames</a></p>
+											<div class="row align-items-center">
+												<div class="col-lg-7">
+													<ul class="list-unstyled fa-ul mb-lg-0 mb-5">
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-cube fa-2x indigo-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Torque 2D</h5>
+																<p class="text-muted">Maintained and improved the feature set of GarageGames' 2D engine as part of a 3 person team.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-cubes fa-2x deep-purple-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Torque X</h5>
+																<p class="text-muted">Built many 3D features for this XNA based game engine including a geometry clipmap based terrain system and various shader effects (motion blur, depth of field, bloom).</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-wrench fa-2x light-green-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Torque Game Builder</h5>
+																<p class="text-muted">Helped design and build the editor toolset for Torque 2D and later adapted it to work with 2D scenes in Torque X.</p>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="col-lg-5">
+													<div class="view z-depth-1-half rounded">
+														<img class="rounded img-fluid" src="img/screenshots/torque.jpg">
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -110,21 +289,65 @@
 								<div class="col-md-12">
 									<div class="card mx-2 my-2 project-card">
 										<div class="card-body">
-											<h4 class="card-title">Other</h4>
-											<p class="card-text">Here's some other stuff.</p>
+											<h4 class="card-title text-center">Other</h4>
+											<p class="text-center text-muted w-responsive mx-auto mb-4">A few other projects I have worked on over the years</p>
+											<div class="row align-items-center">
+												<div class="col-lg-7">
+													<ul class="list-unstyled fa-ul mb-lg-0 mb-5">
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-lightbulb fa-2x indigo-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Photon Phanatics</h5>
+																<p class="text-muted">A clever and difficult puzzle game built on the same framework as The Art of War and <a href="https://apps.apple.com/us/app/photon-phanatics/id1345493476" target="_blank">released on iOS</a>.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-book-medical fa-2x red-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Maine EMS</h5>
+																<p class="text-muted">Built a prototype mobile application (Xamarin) and web backend (ASP.net Core and SQL Server) for converting, managing, and disseminating protocols for emergency room doctors and field personnel.</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-gamepad fa-2x deep-purple-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Fallen Empire: Legions</h5>
+																<p class="text-muted">Lead programmer for the multiplayer shooter Fallen Empire: Legions (now <a href="https://www.legionsoverdrive.com/" target="_blank">Legions: Overdrive</a>).</p>
+															</div>
+														</li>
+														<li class="d-flex pl-4">
+															<span class="fa-li"><i class="fas fa-running fa-2x light-green-text"></i></span>
+															<div>
+																<h5 class="font-weight-bold mb-1">Fit Clients</h5>
+																<p class="text-muted">A mobile application with web backend for users to track fitness statistics under the direction of a personal trainer. Built to spec using much of the same backend code as FitPro.</p>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="col-lg-5">
+													<div class="view z-depth-1-half rounded">
+														<img class="rounded img-fluid" src="img/screenshots/legions2.jpg">
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<ol class="carousel-indicators">
-							<li class="project-thumbnail active" data-target="#projects-carousel" data-slide-to="0"><img class="rounded-circle" src="img/thumbnails/the-art-of-war.png"></li>
-							<li class="project-thumbnail" data-target="#projects-carousel" data-slide-to="1"><img class="rounded-circle" src="img/thumbnails/unity-tool-suite.png"></li>
-							<li class="project-thumbnail" data-target="#projects-carousel" data-slide-to="2"><img class="rounded-circle" src="img/thumbnails/fitpro.png"></li>
-							<li class="project-thumbnail" data-target="#projects-carousel" data-slide-to="3"><img class="rounded-circle" src="img/thumbnails/torque.png"></li>
-							<li class="project-thumbnail" data-target="#projects-carousel" data-slide-to="4"><img class="rounded-circle" src="img/thumbnails/pirho-soft.png"></li>
+							<li class="project-thumbnail active" data-target="#projects-carousel" data-slide-to="0"><img class="rounded-circle" src="img/carousel/the-art-of-war.png"></li>
+							<li class="project-thumbnail" data-target="#projects-carousel" data-slide-to="1"><img class="rounded-circle" src="img/carousel/fitpro.png"></li>
+							<li class="project-thumbnail" data-target="#projects-carousel" data-slide-to="2"><img class="rounded-circle" src="img/carousel/unity-tool-suite.png"></li>
+							<li class="project-thumbnail" data-target="#projects-carousel" data-slide-to="3"><img class="rounded-circle" src="img/carousel/torque.png"></li>
+							<li class="project-thumbnail" data-target="#projects-carousel" data-slide-to="4"><img class="rounded-circle" src="img/carousel/pirho-soft.png"></li>
 						</ol>
 					</div>
+				</div>
+				<div class="col carousel-arrow">
+					<a class="carousel-control-next" href="#projects-carousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -176,8 +399,10 @@
 							<p>Seattle, WA, USA</p>
 						</li>
 						<li>
-							<i class="fas fa-envelope mt-4 fa-2x"></i>
-							<p>larsoad@gmail.com</p>
+							<a class="email-link" href="mailto:larsoad@gmail.com">
+								<i class="fas fa-envelope mt-4 fa-2x"></i>
+								<p>larsoad@gmail.com</p>
+							</a>
 						</li>
 					</ul>
 				</div>
